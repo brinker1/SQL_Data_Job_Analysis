@@ -13,7 +13,8 @@ FROM
     job_postings_fact jpf
 INNER JOIN skills_job_dim sjd ON sjd.job_id = jpf.job_id
 INNER JOIN skills_dim sd ON sd.skill_id = sjd.skill_id
-WHERE job_title_short = 'Data Scientist' AND
+WHERE job_title_short = 'Data Scientist' 
 GROUP BY skills
 ORDER BY demand_count DESC
 LIMIT 10
+

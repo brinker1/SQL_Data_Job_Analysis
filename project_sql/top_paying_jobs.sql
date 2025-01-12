@@ -8,7 +8,7 @@ Reason: offer insight into lucritive roles and skills for Data Scientists
 SELECT  
     job_id,
     job_title,
-    company_dim.name AS,
+    company_dim.name,
     job_location,
     job_schedule_type,
     salary_year_avg,
